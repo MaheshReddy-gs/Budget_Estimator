@@ -27,6 +27,7 @@ export default function Login() {
                 setMessage(data.message || "Login failed. Please try again.");
             }
         } catch (error) {
+            console.error(error);
             setMessage("An error occurred. Please try again later.");
         }
     };
@@ -61,13 +62,13 @@ export default function Login() {
                     {message && <p className="text-center text-red-500">{message}</p>}
                 </form>
                 <div className="text-center mt-4">
-                    <p className="text-gray-600">Don't have an account?</p>
-                    <a
+                    <p className="text-gray-600"> Dont have an account?</p>
+                    <link
                         href="/register"
                         className="text-blue-500 hover:text-blue-600 font-semibold"
                     >
                         Register here
-                    </a>
+                    </link>
                 </div>
             </div>
         </div>

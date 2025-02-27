@@ -121,7 +121,7 @@ export default function Home() {
   };
 
   const validateField = (name, value) => {
-    let newErrors = { ...errors };
+    const newErrors = { ...errors };
     if (
       name.includes("Amount") ||
       name.includes("Devs") ||
