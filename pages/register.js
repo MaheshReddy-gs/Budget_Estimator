@@ -33,6 +33,7 @@ export default function Register() {
                 setMessage(data.message || "Registration failed. Please try again.");
             }
         } catch (error) {
+            console.error(error);
             setMessage("An error occurred. Please try again later.");
         }
     };
