@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Link from 'next/link';
 
 export default function Register() {
     const [ form, setForm ] = useState({
@@ -93,12 +94,12 @@ export default function Register() {
                 </form>
                 <div className="text-center mt-4">
                     <p className="text-gray-600">Already have an account?</p>
-                    <link
+                    <Link
                         href="/login"
                         className="text-blue-500 hover:text-blue-600 font-semibold"
                     >
                         Login here
-                    </link>
+                    </Link>
                 </div>
             </div>
         </div>
